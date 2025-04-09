@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doğaya Dönüş</title>
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <!-- Bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="image/logo.png"
+          width="30"
+          height="30"
+          class="d-inline-block align-to"
+          alt=""
+        />
+        <span class="text-success">Doğaya Dönüş</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Anasayfa<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hakkımızda.html">Hakkımızda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Vizyonumuz
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Biz Kimiz?</a>
+              <a class="dropdown-item" href="#">Vizyonumuz</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ortaklarımız</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletişim.html">İletişim</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- ? form start -->
+    <div class="container mt-5">
+      <h3 class="text-center mb-3">KAYIT FORMU</h3>
+      <form>
+        <!-- ad ve email -->
+        <div class="row-ms">
+          <div class="col">
+            <div class="form-group">
+              <label for="İsim">Ad Soyad</label>
+              <input type="text" class="form-control" id="isimınput" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >bu alan zorunludur</small
+              >
+            </div>
+          </div>
+        </div>
+        <!-- şifre ve şehir -->
+        <div class="row-ms">
+          <div class="col">
+            <div class="form-group">
+              <label for="şıfre">Şifre</label>
+              <input
+                type="password"
+                class="form-control"
+                id="şıfre"
+                aria-describedby="şıfreHelp"
+              />
+              <small id="şıfreHelp" class="form-text text-muted"
+                >bu alan zorunludur</small
+              >
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="şehir">Şehir</label>
+              <select class="form-control" id="şehir">
+                <option>İstanbul</option>
+                <option>Ankara</option>
+                <option>İzmir</option>
+                <option>Kocaeli</option>
+                <option>Eskişehir</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- dosya,cinsiyet,hobiler -->
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="dosya">Dosya Seçiniz</label>
+              <input type="file" class="form-control-file" id="dosya" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="col">
+              <h4>Cinsiyetiniz</h4>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios1"
+                  value="option1"
+                  checked
+                />
+                <label class="form-check-label" for="exampleRadios1">
+                  Erkek
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="exampleRadios"
+                  id="exampleRadios2"
+                  value="option2"
+                  checked
+                />
+                <label class="form-check-label" for="exampleRadios2">
+                  Kadın
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <h4>Hobileriniz</h4>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Check1" />
+                <label class="form-check-label" for="Check1"
+                  >Kitap okumak</label
+                >
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Check2" />
+                <label class="form-check-label" for="Check2"
+                  >Seyhat etmek</label
+                >
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Check3" />
+                <label class="form-check-label" for="Check3">
+                  Şaekı Söylemek</label
+                >
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="Check4" />
+                <label class="form-check-label" for="Check4"
+                  >Yemek Yapmak</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="row mt-5">
+          <button type="submit" class="btn btn-primary btn-block">
+            Kaydet
+          </button>
+          <button type="Reset" class="btn btn-success btn-block">
+            Temizle
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer bg-dark text-light text-center mt-4" style="height: 25px;">
+      <p>&copy;   Tüm Hakları Saklıdır</p>
+    </div>
+    <!-- Bootstrap javascript link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
